@@ -1,0 +1,173 @@
+1. Set Up Job
+
+  Current runner version: '2.280.1'
+  Operating System
+    Ubuntu
+    20.04.2
+    LTS
+  Virtual Environment
+    Environment: ubuntu-20.04
+    Version: 20210803.0
+    Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210803.0/images/linux/Ubuntu2004-README.md
+    Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20210803.0
+  Virtual Environment Provisioner
+    1.0.0.0-master-20210802-2
+  GITHUB_TOKEN Permissions
+    Actions: write
+    Checks: write
+    Contents: write
+    Deployments: write
+    Discussions: write
+    Issues: write
+    Metadata: read
+    Packages: write
+    PullRequests: write
+    RepositoryProjects: write
+    SecurityEvents: write
+    Statuses: write
+  Prepare workflow directory
+  Prepare all required actions
+  Getting action download info
+  Download action repository 'actions/checkout@v1' (SHA:50fbc622fc4ef5163becd7fab6573eac35f8462e)
+  
+2. Run actions/checkout@v1
+
+    Run actions/checkout@v1
+    with:
+      clean: true
+  Syncing repository: Mordyfier/hello-github-actions
+  git version
+  git version 2.32.0
+  git lfs version
+  git-lfs/2.13.3 (GitHub; linux amd64; go 1.16.2)
+  git init "/home/runner/work/hello-github-actions/hello-github-actions"
+  hint: Using 'master' as the name for the initial branch. This default branch name
+  hint: is subject to change. To configure the initial branch name to use in all
+  hint: of your new repositories, which will suppress this warning, call:
+  hint: 
+  hint: 	git config --global init.defaultBranch <name>
+  hint: 
+  hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+  hint: 'development'. The just-created branch can be renamed via this command:
+  hint: 
+  hint: 	git branch -m <name>
+  Initialized empty Git repository in /home/runner/work/hello-github-actions/hello-github-actions/.git/
+  git remote add origin https://github.com/Mordyfier/hello-github-actions
+  git config gc.auto 0
+  git config --get-all http.https://github.com/Mordyfier/hello-github-actions.extraheader
+  git -c http.extraheader="AUTHORIZATION: basic ***" fetch --tags --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/*
+  remote: Enumerating objects: 29, done.        
+  remote: Counting objects:   3% (1/29)        
+  remote: Counting objects:   6% (2/29)        
+  remote: Counting objects:  10% (3/29)        
+  remote: Counting objects:  13% (4/29)        
+  remote: Counting objects:  17% (5/29)        
+  remote: Counting objects:  20% (6/29)        
+  remote: Counting objects:  24% (7/29)        
+  remote: Counting objects:  27% (8/29)        
+  remote: Counting objects:  31% (9/29)        
+  remote: Counting objects:  34% (10/29)        
+  remote: Counting objects:  37% (11/29)        
+  remote: Counting objects:  41% (12/29)        
+  remote: Counting objects:  44% (13/29)        
+  remote: Counting objects:  48% (14/29)        
+  remote: Counting objects:  51% (15/29)        
+  remote: Counting objects:  55% (16/29)        
+  remote: Counting objects:  58% (17/29)        
+  remote: Counting objects:  62% (18/29)        
+  remote: Counting objects:  65% (19/29)        
+  remote: Counting objects:  68% (20/29)        
+  remote: Counting objects:  72% (21/29)        
+  remote: Counting objects:  75% (22/29)        
+  remote: Counting objects:  79% (23/29)        
+  remote: Counting objects:  82% (24/29)        
+  remote: Counting objects:  86% (25/29)        
+  remote: Counting objects:  89% (26/29)        
+  remote: Counting objects:  93% (27/29)        
+  remote: Counting objects:  96% (28/29)        
+  remote: Counting objects: 100% (29/29)        
+  remote: Counting objects: 100% (29/29), done.        
+  remote: Compressing objects:   4% (1/23)        
+  remote: Compressing objects:   8% (2/23)        
+  remote: Compressing objects:  13% (3/23)        
+  remote: Compressing objects:  17% (4/23)        
+  remote: Compressing objects:  21% (5/23)        
+  remote: Compressing objects:  26% (6/23)        
+  remote: Compressing objects:  30% (7/23)        
+  remote: Compressing objects:  34% (8/23)        
+  remote: Compressing objects:  39% (9/23)        
+  remote: Compressing objects:  43% (10/23)        
+  remote: Compressing objects:  47% (11/23)        
+  remote: Compressing objects:  52% (12/23)        
+  remote: Compressing objects:  56% (13/23)        
+  remote: Compressing objects:  60% (14/23)        
+  remote: Compressing objects:  65% (15/23)        
+  remote: Compressing objects:  69% (16/23)        
+  remote: Compressing objects:  73% (17/23)        
+  remote: Compressing objects:  78% (18/23)        
+  remote: Compressing objects:  82% (19/23)        
+  remote: Compressing objects:  86% (20/23)        
+  remote: Compressing objects:  91% (21/23)        
+  remote: Compressing objects:  95% (22/23)        
+  remote: Compressing objects: 100% (23/23)        
+  remote: Compressing objects: 100% (23/23), done.        
+  remote: Total 29 (delta 5), reused 5 (delta 0), pack-reused 0        
+  From https://github.com/Mordyfier/hello-github-actions
+   * [new branch]      main       -> origin/main
+  git checkout --progress --force 35a1dc96177d23b4ac844c14c196141338a244e7
+  Note: switching to '35a1dc96177d23b4ac844c14c196141338a244e7'.
+
+  You are in 'detached HEAD' state. You can look around, make experimental
+  changes and commit them, and you can discard any commits you make in this
+  state without impacting any branches by switching back to a branch.
+
+  If you want to create a new branch to retain commits you create, you may
+  do so (now or later) by using -c with the switch command. Example:
+
+    git switch -c <new-branch-name>
+
+  Or undo this operation with:
+
+    git switch -
+
+  Turn off this advice by setting config variable advice.detachedHead to false
+
+  HEAD is now at 35a1dc9 Merge pull request #2 from Mordyfier/first-action
+  
+3. Running /./action-a
+
+  Run ./action-a
+    with:
+      MY_NAME: Mona
+  Building docker image
+    Dockerfile for action: '/home/runner/work/hello-github-actions/hello-github-actions/./action-a/Dockerfile'.
+    /usr/bin/docker build -t 48c8ce:f850b57ac4555353af7f0cec0db71476 -f "/home/runner/work/hello-github-actions/hello-github-actions/./action-a/Dockerfile" "/home/runner/work/hello-github-actions/hello-github-actions/action-a"
+    Sending build context to Docker daemon  4.096kB
+
+    Step 1/4 : FROM debian:9.5-slim
+    9.5-slim: Pulling from library/debian
+    f17d81b4b692: Pulling fs layer
+    f17d81b4b692: Verifying Checksum
+    f17d81b4b692: Download complete
+    f17d81b4b692: Pull complete
+    Digest: sha256:ef6be890318a105f7401d0504c01c2888daa5d9e45b308cf0e45c7cb8e44634f
+    Status: Downloaded newer image for debian:9.5-slim
+     ---> 4b4471f624dc
+    Step 2/4 : ADD entrypoint.sh /entrypoint.sh
+     ---> 3e20fc9e45e5
+    Step 3/4 : RUN chmod +x /entrypoint.sh
+     ---> Running in 85450cb29508
+    Removing intermediate container 85450cb29508
+     ---> 712a293856c5
+    Step 4/4 : ENTRYPOINT ["/entrypoint.sh"]
+     ---> Running in e4931efeee5e
+    Removing intermediate container e4931efeee5e
+     ---> df9dcc721361
+    Successfully built df9dcc721361
+    Successfully tagged 48c8ce:f850b57ac4555353af7f0cec0db71476
+  /usr/bin/docker run --name c8cef850b57ac4555353af7f0cec0db71476_f045d8 --label 48c8ce --workdir /github/workspace --rm -e INPUT_MY_NAME -e HOME -e GITHUB_JOB -e GITHUB_REF -e GITHUB_SHA -e GITHUB_REPOSITORY -e GITHUB_REPOSITORY_OWNER -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_RETENTION_DAYS -e GITHUB_ACTOR -e GITHUB_WORKFLOW -e GITHUB_HEAD_REF -e GITHUB_BASE_REF -e GITHUB_EVENT_NAME -e GITHUB_SERVER_URL -e GITHUB_API_URL -e GITHUB_GRAPHQL_URL -e GITHUB_WORKSPACE -e GITHUB_ACTION -e GITHUB_EVENT_PATH -e GITHUB_ACTION_REPOSITORY -e GITHUB_ACTION_REF -e GITHUB_PATH -e GITHUB_ENV -e RUNNER_OS -e RUNNER_TOOL_CACHE -e RUNNER_TEMP -e RUNNER_WORKSPACE -e ACTIONS_RUNTIME_URL -e ACTIONS_RUNTIME_TOKEN -e ACTIONS_CACHE_URL -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/hello-github-actions/hello-github-actions":"/github/workspace" 48c8ce:f850b57ac4555353af7f0cec0db71476
+  Hello world my name is Mona
+
+4. Complete Job
+
+Cleaning up orphan processes
